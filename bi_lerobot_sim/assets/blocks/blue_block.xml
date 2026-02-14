@@ -1,0 +1,24 @@
+<mujoco model="blue_block">
+  <compiler angle="radian"/>
+  <option timestep="0.002" iterations="50" ls_iterations="20"/>
+  
+  <asset>
+    <material name="blue" rgba="0.1 0.1 0.8 1"/>
+  </asset>
+  
+  <default>
+    <geom margin="0.0005" solimp="0.99 0.999 0.01" solref="0.004 1"/>
+  </default>
+  
+  <worldbody>
+    <body name="blue_block">
+      <freejoint/>
+      <inertial pos="0 0 0" mass="0.05" diaginertia="0.0001 0.0001 0.0001"/>
+      <!-- High friction for secure grasping: (mu=1.5, mu_roll=0.1, mu_spin=0.05) -->
+      <!-- Margin increased for better collision detection -->
+      <geom name="blue_block_geom" type="box" size="0.0125 0.0125 0.0125" material="blue" 
+            friction="1.5 0.1 0.05" density="0" condim="4" conaffinity="1" margin="0.001"/>
+      <site name="blue_block_site" pos="0 0 0" size="0.0125"/>
+    </body>
+  </worldbody>
+</mujoco>
