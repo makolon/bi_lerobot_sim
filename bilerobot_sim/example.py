@@ -3,7 +3,7 @@ from typing import Sequence
 from absl import app
 from absl import flags
 from absl import logging
-from bi_lerobot_sim import task_suite
+from bilerobot_sim import task_suite
 from dm_control import composer
 import numpy as np
 import cv2

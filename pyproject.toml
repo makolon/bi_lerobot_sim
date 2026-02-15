@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bi_lerobot_sim"
+name = "bilerobot_sim"
 version = "1.0.0"
 description = "LeRobot SO100/SO101 simulation package"
 requires-python = ">=3.10"
@@ -24,7 +24,7 @@ dependencies = [
 ]
 
 [tool.setuptools.package-data]
-"bi_lerobot_sim" = ["assets/**"]
+"bilerobot_sim" = ["assets/**"]
 
 [tool.setuptools.packages.find]
 where = ["."]

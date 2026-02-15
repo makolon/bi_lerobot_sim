@@ -2,7 +2,7 @@
 
 import os
 
-from bi_lerobot_sim.tasks import lerobot_task
+from bilerobot_sim.tasks import lerobot_task
 from dm_control import composer
 from dm_control import mjcf
 from dm_control.composer import initializers

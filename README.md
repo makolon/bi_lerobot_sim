@@ -28,7 +28,7 @@ export MUJOCO_GL='egl'
 
 ## Tasks
 
-Currently available tasks (see `bi_lerobot_sim/task_suite.py`):
+Currently available tasks (see `bilerobot_sim/task_suite.py`):
 
 - `BlockStack` — stack three colored blocks (blue, yellow, red)
 
@@ -37,13 +37,13 @@ Currently available tasks (see `bi_lerobot_sim/task_suite.py`):
 ### Interactive viewer (requires `mjpython` on macOS)
 
 ```bash
-python bi_lerobot_sim/viewer.py --task_name BlockStack
+python bilerobot_sim/viewer.py --task_name BlockStack
 ```
 
 ### Record overhead camera to MP4 (no viewer required)
 
 ```bash
-python bi_lerobot_sim/example.py --task_name BlockStack --num_steps 500 --output_dir ./outputs
+python bilerobot_sim/example.py --task_name BlockStack --num_steps 500 --output_dir ./outputs
 ```
 
 This will save `simulation.mp4` under the specified output directory.
@@ -53,7 +53,7 @@ This will save `simulation.mp4` under the specified output directory.
 - If stepping is slow, verify `MUJOCO_GL` (e.g., `'egl'` on Linux servers).
 - On macOS, the interactive viewer requires `mjpython`; if that fails, use the
 	recording script instead.
-- Task list and kwargs are in `bi_lerobot_sim/task_suite.py`.
+- Task list and kwargs are in `bilerobot_sim/task_suite.py`.
 
 ## Note
 This project is a derivative simulation for SO101 and is not an officially

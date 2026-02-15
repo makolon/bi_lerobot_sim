@@ -1,9 +1,9 @@
 """Creates lerobot sim task environments using dm_control.composer."""
 
 import inspect
-from bi_lerobot_sim.tasks import block_pnp
-from bi_lerobot_sim.tasks import block_sort
-from bi_lerobot_sim.tasks import block_stack
+from bilerobot_sim.tasks import block_pnp
+from bilerobot_sim.tasks import block_sort
+from bilerobot_sim.tasks import block_stack
 
 from dm_control import composer
 import immutabledict
